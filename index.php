@@ -20,12 +20,6 @@
 			<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 				<div class="container">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Botones de Navegacion</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
 						<a  class="volver" >
 							<img class="navbar-brand" src="images/logo.png" width="235" height="50">
 						</a>
@@ -35,7 +29,7 @@
 		</div>
 	</header>
 
-	<div class="row fondoazul" >
+	<section class="row fondoazul" >
 		<div class="page">
 			<div class="col-md-6">
 				<div class="contenedor">
@@ -59,45 +53,71 @@
 					<br/>
 					<h4> Queremos que sus procesos </h4>
 					<div class="separador2"></div>
-					<h4 class="segundo"> estén bajo buenas condiciones</h4><br/>
+					<h4 class="segundo"> estén en las mejores condiciones</h4><br/>
 				</div>
 			</div>
 		</div>
 
-	</div>
-	<div class="row registro" >
-		<div class="page">
-			<h2>Regístrese Aquí </h2>
+	</section>
+	<section class="row registro" >
+		<div class="page" id="registroweb">
+			<h2> <span class="subrayado">Regístrese Aquí</span> </h2>
 			<br>
-			<form>
-				<div class="form-group col-md-8">
-					<label class="control-label textred" for="nameuser">Nombre y Apellido</label>
-					<input type="text" autocomplete="off" class="form-control validate obligatorio" id="nameuser" data-placement='bottom' data-trigger='manual' data-container='body'>
-				</div>
-				<div class="form-group col-md-4 ">
-					<label class="control-label textred" for="phonemain">Teléfono Movil</label>
-					<input type="text" autocomplete="off" class="form-control validate obligatorio" maxlength="11" id="phonemain" data-placement='bottom' data-trigger='manual' data-container='body'>
-				</div>
+			<br>
 
-				<div class="form-group col-md-8">
-					<label class="control-label" for="email">Correo Electrónico </label>
-					<input type="text" autocomplete="off" class="form-control validate" id="email" data-placement='bottom' data-trigger='manual' data-container='body'>
-				</div>
-				<div class="form-group col-md-4">
+			<div class="col-md-7">
+				<form id="registrar">
+					<div class="form-group">
+						<label class="control-label textred " for="nameuser">Nombre y Apellido</label>
+						<input type="text" autocomplete="off" class="form-control input-lg" name="nameuser" maxlength="40" title="El campo es obligatorio"required>
+					</div>
+					<div class="form-group">
+						<label class="control-label textred" for="movil">Teléfono Movil</label>
+						<input name="movil" type="text" class="form-control input-lg" maxlength="11" id="movil" pattern="^(0416|0426|0414|0424|0412)\d{7}$" title="Formato de telefono inválido Ejm: 04165550044, 04145551144, 04125552244" placeholder="Ejm: 04140115533" autocomplete="off"  required>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label textred" for="correo">Correo Electrónico </label>
+						<input type="text" placeholder="Ejm: hola@gmail.com" autocomplete="off" class="form-control input-lg" name="correo" id="correo" pattern="\S+@\S+\.\S+" title="Formato de correo inválido Ejm: hola@gmail.com" required>
+					</div>
+					<div class="form-group " style="float:right;">
+						<br>
+						<button type="submit" class="redweb" >
+							Registrarse
+						</button>
+					</div>
 					<br>
-					<h4 ><a class="redweb" href="#">Registrarse</a></h4>
-				</div>
-			</form>
+					<br>
+					<br>
+					<br>
+					<div class="alert alert-success" id="respuesta" role="alert" style="display:none;">
+					<div class="alert alert-danger" id="respuesta2" role="alert" style="display:none;">
+
+					</div>
+
+										<div class="alert alert-warning" role="alert">
+						<p>Los campos de título precedido de asterisco (
+							<span style="color:red;font-weight:bold;">*</span>
+							) son obligatorios.
+						</p>
+					</div>
+
+				</form>
+
+			</div>
+			<div class="col-md-5">
+
+			</div>
+
 		</div>
-	</div>
-
-
+	</section>
 	<footer class="last ">
 		<div class="row calidad">
 			<div class="page">
-				<h2>Nuestro <span style="font-weight:bold">SOFTWARE</span> se basa <span class="subrayado">en la calidad</span></h2>
+				<h2>Nuestro <span style="font-weight:bold">SOFTWARE</span> se basa <span class="subrayado">en la calidad</span> <span class="close"><a class="volver scroll-top" title="Subir"><i class="glyphicon glyphicon-chevron-up"></i></a></span></h2>
+
 			</div>
-			<a class="volver scroll-top" title="Subir"><i class="glyphicon glyphicon-chevron-up"></i></a>
+
 		</div>
 <!-- 		<ul class="nav pull-right scroll-top">
 			<li><a class="volver" title="Subir"><i class="glyphicon glyphicon-chevron-up"></i></a></li>
