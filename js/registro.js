@@ -18,11 +18,11 @@ $(function() {
 		})
 		.done(function(msg) {
 		var result = JSON.parse(msg);
- 		//respuesta exitosa.
- 		$("#respuesta2").hide("fast");
- 		$("#respuesta").hide("fast");
- 		$("#respuesta").html(result);
- 		$("#respuesta").show("fast");
+	 		//respuesta exitosa.
+	 		$("#respuesta2").hide("fast");
+	 		$("#respuesta").hide("fast");
+	 		$("#respuesta").html(result);
+	 		$("#respuesta").show("fast");
  		})
 		.fail(function() {
 			$("#respuesta").hide("fast");
