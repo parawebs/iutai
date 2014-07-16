@@ -12,12 +12,12 @@ header .navbar-brand{
 	padding: 0px;
 }
 
-div.registro{
+section.registro{
 	padding: 2em 6em 2em 6em;
 	background-color: white;
 }
 
-div.registro h2{
+section.registro h2{
 	font-weight: bold;
 	color:#0098b8;
 	margin:0px;
@@ -37,6 +37,14 @@ div.calidad .subrayado{
 	color:white;
 }
 
+ .registro .subrayado{
+ 	background-color: #0098b8;
+	color:white;
+	padding:11px;
+ }
+
+
+
 .cabecera>li>a{
 	padding: 5px !important;
 	margin: 10px !important;
@@ -52,7 +60,9 @@ div.calidad .subrayado{
 	color: white !important;
 }
 
-
+.form-control{
+	border-radius: 0px;
+}
 
 .fondoazul{
 	margin-top: 50px;
@@ -66,13 +76,13 @@ div.calidad .subrayado{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#017a95', endColorstr='#0098b8',GradientType=0 );
 }
 
-div.fondoazul div.contenedor {
+section.fondoazul div.contenedor {
 
 	padding: 4em 0em 2em 2em;
 	text-align: left;
 }
 
-div.fondoazul div.contenedor  h2{
+section.fondoazul div.contenedor  h2{
 	font-size: 2.9em;
 	margin:0px!important;
 	display: inline;
@@ -93,7 +103,8 @@ div.fondoazul div.contenedor  h2{
 
 
 
-div.registro a.redweb{
+section.registro button.redweb{
+	border :1px solid #b53a04;
 	background-color: #eb4902;
 	color: white !important;
 	text-decoration: none;
@@ -102,23 +113,23 @@ div.registro a.redweb{
 	font-size: 1.3em;
 }
 
-div.registro  a.redweb:hover{
+section.registro button.redweb:hover{
 	background-color: #b53a04;
 }
 
-div.fondoazul div.contenedor2 {
+section.fondoazul div.contenedor2 {
 	padding: 6em 0em 2em 0em;
 	text-align: center;
 	margin-left: -3em;
 }
 
-div.fondoazul div.contenedor2 p{
+section.fondoazul div.contenedor2 p{
 	color:white;
 	font-weight: bold;
 	font-size: 1.6em;
 }
 
-div.fondoazul div.contenedor2  h4{
+section.fondoazul div.contenedor2  h4{
 	margin:0px!important;
 	display: inline;
 	color: #0098b8;
@@ -136,13 +147,17 @@ footer.last a{
 }
 footer.last a.volver{
 	color: #0098b8;
-font-size:1.4em;}
+	font-size:1.4em;
+}
 
 footer.last div.content{
 	padding:1em;
-
 }
 
+.textred:after{
+	content: " *";
+	color:red;
+}
 
 div.page{
 	max-width: 1024px;
@@ -162,14 +177,43 @@ div.page{
 
 }
 
+.circle{
+	border-radius: 50%;
+	width: 150px;
+    height: 150px;
+    padding: 8px;
+	vertical-align: middle;
+    background: #999;
+    border: 2px solid #666;
+    color: white;
+    text-align: center;
+    font: 5em Arial, sans-serif;
+    font-weight: 700;
+    padding-top: .5em;
+
+}
+.countregister{
+background-color: #0098b8;
+	color:white;
+	opacity: .7;
+	padding:10px;
+}
+
+
+@media (max-width: 419px) {
+ .registro .subrayado{
+	padding:0px;
+ }
+
+}
 
 @media (max-width:991px){
-	div.fondoazul div.contenedor {
+	section.fondoazul div.contenedor {
 		text-align:center;
 		margin-right:auto;margin-left:auto;
 		padding-left: 0px;
 	}
-	div.fondoazul div.contenedor2 {
+	section.fondoazul div.contenedor2 {
 		text-align: center;
 		margin-right:auto;margin-left:auto;
 		padding: 0em 0em 2em 0em;
@@ -180,10 +224,10 @@ div.page{
 	div.contenedor h4 {
 		margin-left: 3em;
 	}
-	div.fondoazul{
+	section.fondoazul{
 		height:25em;
 	}
-		div.fondoazul div.contenedor2  h4.segundo{
+		section.fondoazul div.contenedor2  h4.segundo{
 		margin-left:3em !important;
 	}
 
@@ -193,10 +237,10 @@ div.page{
 	div.contenedor h4 {
 		margin-left: 3em;
 	}
-		div.fondoazul{
+		section.fondoazul{
 		height:25em;
 	}
-	div.fondoazul div.contenedor2  h4.segundo{
+	section.fondoazul div.contenedor2  h4.segundo{
 		margin-left:3em !important;
 	}
 
